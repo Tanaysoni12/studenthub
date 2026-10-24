@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub | Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="notice.html">Notices</a>
+        <a href="result.html">Results</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about.html">About</a>
+        <a class="signin" href="login.php">Sign In</a>
+      
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div>
+          <span class="page-tag">new student</span>
+          <h1>Create Account</h1>
+          <p>Register to access your student portal and academic updates.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form-card" id="registration-form" action="php/submit-registration.php" method="post">
+          <h2>Student Registration</h2>
+          <p>Complete the form below to create your student account.</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input id="full-name" name="fullName" type="text" placeholder="Enter your full name"
+                autocomplete="name" minlength="1" maxlength="60" pattern="[A-Za-z][A-Za-z '\-]{0,59}"
+                title="Use letters, spaces, apostrophes, or hyphens." required />
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text" placeholder="Choose a username"
+                autocomplete="username" minlength="3" maxlength="30" pattern="[A-Za-z][A-Za-z0-9_.\-]{2,29}"
+                title="Use 3-30 characters; start with a letter and use only letters, numbers, dots, underscores, or hyphens."
+                autocapitalize="none" spellcheck="false" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="student@email.com"
+                autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input id="mobile" name="mobile" type="tel" placeholder="10 to 15 digits"
+                autocomplete="tel" inputmode="tel" pattern="\+?[0-9]{10,15}" maxlength="16"
+                title="Enter 10 to 15 digits, optionally starting with +." required />
+            </div>
+            <div class="form-group">
+              <label for="course">Course</label>
+              <select id="course" name="course" required>
+                <option value="" selected disabled>Select your course</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="business-studies">Business Studies</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts-humanities">Arts &amp; Humanities</option>
+                <option value="science">Science</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="year">Year</label>
+              <select id="year" name="year" required>
+                <option value="" selected disabled>Select your year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Create a password"
+                autocomplete="new-password" minlength="8" maxlength="64"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,64}"
+                title="Use 8-64 characters with uppercase, lowercase, number, and special character." required />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input id="confirm-password" name="confirmPassword" type="password"
+                placeholder="Enter your password again" autocomplete="new-password" required />
+            </div>
+            <fieldset class="form-group choice-group full">
+              <legend>Gender</legend>
+              <div class="choice-options">
+                <label><input type="radio" name="gender" value="female" required /> Female</label>
+                <label><input type="radio" name="gender" value="male" /> Male</label>
+                <label><input type="radio" name="gender" value="other" /> Other</label>
+                <label><input type="radio" name="gender" value="prefer-not-to-say" /> Prefer not to say</label>
+              </div>
+            </fieldset>
+            <div class="form-group full choice-group">
+              <label class="choice-label" for="terms">
+                <input id="terms" name="terms" type="checkbox" required />
+                <span>I accept the <a href="terms.html">Terms &amp; Conditions</a>.</span>
+              </label>
+            </div>
+          </div>
+          <p class="form-hint">Password must include uppercase and lowercase letters, a number, and a special character.</p>
+          <p class="form-message" id="registration-message" role="status" aria-live="polite" hidden></p>
+          <div class="btn-row">
+            <button class="btn primary" type="submit">Register</button>
+            <a class="btn secondary" href="login.php">Already registered?</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>Â© 2026 StudentHub Portal</p>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>

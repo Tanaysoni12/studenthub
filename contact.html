@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="notice.html">Notices</a>
+        <a href="result.html">Results</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about.html">About</a>
+        <a class="signin" href="login.php">Sign In</a>
+      
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div>
+          <span class="page-tag">support</span>
+          <h1>Contact StudentHub</h1>
+          <p>Need help with your student portal account or campus services? Reach out to us anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="panel">
+          <h2>Student Support Center</h2>
+          <p>We are here to help students with academic support, portal access, and university updates.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Email</strong><br />
+              support@studenthub.edu
+            </div>
+            <div class="info-item">
+              <strong>Phone</strong><br />
+              +1 (555) 123-4567
+            </div>
+            <div class="info-item">
+              <strong>Office</strong><br />
+              Student Center, Room 204
+            </div>
+            <div class="info-item">
+              <strong>Office Hours</strong><br />
+              Monday - Friday, 9:00 AM - 5:00 PM
+            </div>
+          </div>
+        </div>
+
+        <form class="form-card" id="contact-form" action="php/submit-contact.php" method="post">
+          <h2>Send Us a Message</h2>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your full name"
+                autocomplete="name" minlength="1" maxlength="60" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com"
+                autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="form-group full">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="How can we help you?"
+                minlength="3" maxlength="120" required />
+            </div>
+            <div class="form-group full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..."
+                minlength="10" maxlength="5000" required></textarea>
+            </div>
+          </div>
+
+          <p class="form-message" id="contact-message" role="status" aria-live="polite" hidden></p>
+          <div class="btn-row">
+            <button class="btn primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>Â© 2026 StudentHub Portal</p>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub | Feedback</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="notice.html">Notices</a>
+        <a href="result.html">Results</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="feedback.html">Feedback</a>
+        <a href="about.html">About</a>
+        <a class="signin" href="login.php">Sign In</a>
+      
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div>
+          <span class="page-tag">student voice</span>
+          <h1>Give Us Feedback</h1>
+          <p>We value your feedback to improve the StudentHub portal and student experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form-card">
+          <h2>Share Your Experience</h2>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label for="studentId">Student ID</label>
+              <input id="studentId" type="text" placeholder="STU-2026001" />
+            </div>
+            <div class="form-group full">
+              <label for="category">Feedback Category</label>
+              <select id="category">
+                <option>Website Experience</option>
+                <option>Academic Support</option>
+                <option>Campus Events</option>
+                <option>Portal Usability</option>
+                <option>General Suggestion</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message">Your Feedback</label>
+              <textarea id="message" placeholder="Tell us what you like, what could improve, or any suggestions you have..."></textarea>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn primary" type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>Â© 2026 StudentHub Portal</p>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>
+

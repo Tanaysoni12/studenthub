@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub | Timetable</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a class="active" href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="notice.html">Notices</a>
+        <a href="result.html">Results</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about.html">About</a>
+        <a class="signin" href="login.php">Sign In</a>
+      
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div>
+          <span class="page-tag">b.tech information technology</span>
+          <h1>3rd Semester Timetable</h1>
+          <p>Weekly class schedule for B.Tech IT students in Semester 3.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel" style="margin-bottom: 24px;">
+          <h2>Semester Subjects</h2>
+          <p><strong>Core subjects:</strong> Data Structures, Database Management Systems, Object-Oriented Programming, Computer Organization, and Discrete Mathematics.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:00 - 10:00</td>
+                <td>Data Structures</td>
+                <td>Database Management Systems</td>
+                <td>Object-Oriented Programming</td>
+                <td>Discrete Mathematics</td>
+                <td>Computer Organization</td>
+              </tr>
+              <tr>
+                <td>10:00 - 11:00</td>
+                <td>Database Management Systems</td>
+                <td>Data Structures</td>
+                <td>Discrete Mathematics</td>
+                <td>Object-Oriented Programming</td>
+                <td>Data Structures</td>
+              </tr>
+              <tr>
+                <td>11:00 - 11:30</td>
+                <td colspan="5"><strong>Short Break</strong></td>
+              </tr>
+              <tr>
+                <td>11:30 - 12:30</td>
+                <td>Computer Organization</td>
+                <td>Object-Oriented Programming</td>
+                <td>Database Management Systems</td>
+                <td>Computer Organization</td>
+                <td>Discrete Mathematics</td>
+              </tr>
+              <tr>
+                <td>12:30 - 01:30</td>
+                <td>English & Communication</td>
+                <td>IT Seminar</td>
+                <td>English & Communication</td>
+                <td>IT Seminar</td>
+                <td>Mentor Hour</td>
+              </tr>
+              <tr>
+                <td>01:30 - 02:30</td>
+                <td colspan="5"><strong>Lunch Break</strong></td>
+              </tr>
+              <tr>
+                <td>02:30 - 04:30</td>
+                <td>Data Structures Lab</td>
+                <td>Database Lab</td>
+                <td>Object-Oriented Programming Lab</td>
+                <td>Computer Organization Lab</td>
+                <td>Project / Tutorial</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-grid" style="margin-top: 24px;">
+          <article class="card">
+            <h3>Data Structures</h3>
+            <p>Arrays, linked lists, stacks, queues, trees, graphs, and algorithm analysis.</p>
+          </article>
+          <article class="card">
+            <h3>Database Management Systems</h3>
+            <p>Relational databases, SQL, normalization, transactions, and database design.</p>
+          </article>
+          <article class="card">
+            <h3>Object-Oriented Programming</h3>
+            <p>Classes, objects, inheritance, polymorphism, exception handling, and Java programming.</p>
+          </article>
+          <article class="card">
+            <h3>Computer Organization</h3>
+            <p>Digital logic, processors, memory systems, instruction sets, and computer architecture.</p>
+          </article>
+          <article class="card">
+            <h3>Discrete Mathematics</h3>
+            <p>Logic, sets, relations, combinatorics, graph theory, and mathematical reasoning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>Â© 2026 StudentHub Portal</p>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>

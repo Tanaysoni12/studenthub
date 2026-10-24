@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub | Events</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StudentHub</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="notice.html">Notices</a>
+        <a href="result.html">Results</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about.html">About</a>
+        <a class="signin" href="login.php">Sign In</a>
+      
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div>
+          <span class="page-tag">campus life</span>
+          <h1>College Events</h1>
+          <p>Explore campus activities, search by event, filter by category, and sort upcoming dates.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="list-tools" data-list-controls="events">
+          <div class="form-group">
+            <label for="event-search">Search events</label>
+            <input id="event-search" type="search" data-search placeholder="Search title, details, or location" />
+          </div>
+          <div class="form-group">
+            <label for="event-category">Category</label>
+            <select id="event-category" data-category>
+              <option value="all">All categories</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="event-sort">Sort by</label>
+            <select id="event-sort" data-sort>
+              <option value="date-asc">Date: soonest first</option>
+              <option value="date-desc">Date: latest first</option>
+              <option value="title-asc">Title: A to Z</option>
+            </select>
+          </div>
+        </div>
+        <p class="list-status" data-list-status role="status" aria-live="polite">Loading events...</p>
+        <div class="event-grid" data-json-list="events" data-source="php/events.php" data-page-size="6" aria-live="polite"></div>
+        <nav class="list-pagination" data-pagination="events" aria-label="Event pages" hidden>
+          <button class="btn secondary" type="button" data-previous>Previous</button>
+          <span data-page-label></span>
+          <button class="btn secondary" type="button" data-next>Next</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>Â© 2026 StudentHub Portal</p>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>

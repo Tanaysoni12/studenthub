@@ -1,0 +1,41 @@
+z
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | Attendance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar"><div class="container navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span><span>StudentHub</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="dashboard.php">Dashboard</a><a href="timetable.html">Timetable</a><a class="active" href="attendance.html">Attendance</a><a href="assignment.html">Assignments</a><a href="notice.html">Notices</a><a href="result.html">Results</a><a href="events.html">Events</a><a href="profile.html">Profile</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a><a href="about.html">About</a><a class="signin" href="login.php">Sign In</a>
+    
+        <button class="theme-toggle" type="button" aria-pressed="false"><span>☀ <span>Light mode</span></span></button>
+      </nav>
+  </div></header>
+  <main>
+    <section class="page-header"><div class="container page-header-inner"><div><span class="page-tag">academic record</span><h1>Attendance</h1><p>Monitor your attendance for B.Tech IT Semester 3 classes and labs.</p></div></div></section>
+    <section class="section"><div class="container">
+      <div class="dashboard-grid">
+        <div class="dashboard-card"><span class="badge success">Overall</span><div class="value">91%</div><div>Attendance</div></div>
+        <div class="dashboard-card"><span class="badge info">Present</span><div class="value">82</div><div>Classes Attended</div></div>
+        <div class="dashboard-card"><span class="badge warning">Absent</span><div class="value">08</div><div>Classes Missed</div></div>
+        <div class="dashboard-card"><span class="badge danger">Required</span><div class="value">75%</div><div>Minimum Required</div></div>
+      </div>
+      <div class="table-wrap" style="margin-top:24px;"><table><thead><tr><th>Subject</th><th>Present</th><th>Absent</th><th>Percentage</th><th>Status</th></tr></thead><tbody>
+        <tr><td>Data Structures</td><td>18</td><td>2</td><td>90%</td><td><span class="badge success">Good</span></td></tr>
+        <tr><td>Database Management Systems</td><td>19</td><td>1</td><td>95%</td><td><span class="badge success">Excellent</span></td></tr>
+        <tr><td>Object-Oriented Programming</td><td>17</td><td>3</td><td>85%</td><td><span class="badge success">Good</span></td></tr>
+        <tr><td>Computer Organization</td><td>14</td><td>5</td><td>74%</td><td><span class="badge warning">Improve</span></td></tr>
+        <tr><td>Discrete Mathematics</td><td>14</td><td>1</td><td>93%</td><td><span class="badge success">Excellent</span></td></tr>
+      </tbody></table></div>
+      <div class="panel" style="margin-top:24px;"><h2>Attendance Reminder</h2><p>Students must maintain at least 75% attendance to remain eligible for semester examinations. Contact your department office if an attendance record needs correction.</p></div>
+    </div></section>
+  </main>
+  <footer><div class="container footer-wrap"><p>Â© 2026 StudentHub Portal</p><a href="terms.html">Terms &amp; Conditions</a></div></footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>
