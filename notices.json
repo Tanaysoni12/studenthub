@@ -1,0 +1,58 @@
+[
+  {
+    "id": "winter-break",
+    "title": "Winter Break Campus Hours",
+    "category": "Holiday",
+    "date": "2026-10-21",
+    "description": "The library and student services desk will operate on reduced hours during winter break. Check the campus calendar for updated opening times.",
+    "badge": "warning"
+  },
+  {
+    "id": "midterm-schedule",
+    "title": "Mid-Semester Examination Schedule Released",
+    "category": "Exams",
+    "date": "2026-10-19",
+    "description": "The mid-semester timetable is available on the student portal. Review your exam date, time, and room before the first examination.",
+    "badge": "danger"
+  },
+  {
+    "id": "library-workshop",
+    "title": "Research Skills Sessions Open for Booking",
+    "category": "Academic",
+    "date": "2026-10-16",
+    "description": "The library is accepting bookings for short workshops on academic databases, citations, and research planning.",
+    "badge": "success"
+  },
+  {
+    "id": "innovation-registration",
+    "title": "Student Innovation Hackathon Registration",
+    "category": "Events",
+    "date": "2026-10-13",
+    "description": "Registration is open for the November innovation hackathon. Teams of up to four students may submit an idea before the deadline.",
+    "badge": "info"
+  },
+  {
+    "id": "classroom-maintenance",
+    "title": "Temporary Classroom Change for Block B",
+    "category": "Schedule",
+    "date": "2026-10-09",
+    "description": "Classes scheduled in Block B room 204 will meet in room 118 while maintenance is completed. The timetable has been updated.",
+    "badge": "warning"
+  },
+  {
+    "id": "scholarship-deadline",
+    "title": "Scholarship Application Deadline Reminder",
+    "category": "Financial Aid",
+    "date": "2026-10-05",
+    "description": "Submit supporting documents for the current scholarship cycle through the student services office before the posted deadline.",
+    "badge": "danger"
+  },
+  {
+    "id": "sports-venue",
+    "title": "Sports Fest Venue Confirmed",
+    "category": "Events",
+    "date": "2026-10-02",
+    "description": "The Inter-College Sports Fest will take place at the University Sports Ground. Participants should review the event information for arrival details.",
+    "badge": "info"
+  }
+]

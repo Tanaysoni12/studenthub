@@ -1,0 +1,82 @@
+[
+  {
+    "id": "innovation-hackathon",
+    "title": "Student Innovation Hackathon",
+    "category": "Tech Event",
+    "date": "2026-11-07",
+    "description": "Build practical solutions in teams, compete with students across departments, and present your prototype to local mentors.",
+    "location": "Innovation Lab",
+    "time": "9:00 AM - 6:00 PM",
+    "badge": "info"
+  },
+  {
+    "id": "intercollege-sports",
+    "title": "Inter-College Sports Fest",
+    "category": "Sports",
+    "date": "2026-11-14",
+    "description": "Take part in cricket, football, basketball, and athletics competitions during the annual campus sports festival.",
+    "location": "University Sports Ground",
+    "time": "8:00 AM - 5:00 PM",
+    "badge": "success"
+  },
+  {
+    "id": "data-science-workshop",
+    "title": "AI & Data Science Workshop",
+    "category": "Workshop",
+    "date": "2026-11-21",
+    "description": "Explore machine learning, data analytics, and responsible AI through hands-on sessions led by faculty and alumni.",
+    "location": "Seminar Hall",
+    "time": "10:30 AM - 1:00 PM",
+    "badge": "warning"
+  },
+  {
+    "id": "cultural-night",
+    "title": "Campus Cultural Night",
+    "category": "Cultural",
+    "date": "2026-12-04",
+    "description": "Enjoy music, dance, drama, and student performances in an evening celebrating campus creativity.",
+    "location": "Main Auditorium",
+    "time": "6:30 PM - 9:30 PM",
+    "badge": "danger"
+  },
+  {
+    "id": "code-clash",
+    "title": "Code Clash Programming Contest",
+    "category": "Tech Event",
+    "date": "2026-12-12",
+    "description": "Compete in timed programming rounds and problem-solving challenges designed for beginner and advanced teams.",
+    "location": "Computer Lab 2",
+    "time": "11:00 AM - 2:00 PM",
+    "badge": "info"
+  },
+  {
+    "id": "community-outreach",
+    "title": "Community Outreach Drive",
+    "category": "Social",
+    "date": "2027-01-16",
+    "description": "Volunteer for local social-impact projects and take part in student-led community initiatives.",
+    "location": "Student Plaza",
+    "time": "9:00 AM - 1:00 PM",
+    "badge": "success"
+  },
+  {
+    "id": "research-symposium",
+    "title": "Undergraduate Research Symposium",
+    "category": "Academic",
+    "date": "2027-02-06",
+    "description": "Share student research posters, attend short talks, and connect with faculty research groups.",
+    "location": "Central Library",
+    "time": "10:00 AM - 3:00 PM",
+    "badge": "warning"
+  },
+  {
+    "id": "career-fair",
+    "title": "Spring Career and Internship Fair",
+    "category": "Career",
+    "date": "2027-02-20",
+    "description": "Meet recruiting organizations, discover internships, and get practical advice on preparing for interviews.",
+    "location": "Student Convention Centre",
+    "time": "10:00 AM - 4:00 PM",
+    "badge": "info"
+  }
+]
